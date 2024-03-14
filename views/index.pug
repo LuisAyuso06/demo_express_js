@@ -1,9 +1,17 @@
 extends layout
 
 block content
-  h1 #{title}
-  p Bienvenido a nuestra página de ventas ecommerce.
+  .container-title
+    h1 #{title}
+  .container-p1
+    p Estamos encantados de darte la bienvenida a nuestro espacio digital, donde la comodidad y la calidad se unen para brindarte una experiencia de compra inigualable. En nuestra plataforma, encontrarás una amplia gama de productos cuidadosamente seleccionados para satisfacer tus necesidades y deseos.
+    p Explora nuestras categorías y descubre productos innovadores, desde tecnología de vanguardia hasta moda elegante, pasando por artículos para el hogar que harán de tu vida cotidiana una experiencia más placentera. Con solo unos clics, podrás acceder a un universo de posibilidades.
+
+
 
   form(action='/buscar-producto', method='GET' class='search-bar')
     input(type='text', name='q', placeholder='Buscar producto...')
     button(type='submit') Buscar
+
+  .img-title1 
+    img(src="/images/e-commerce.jpg", alt="")

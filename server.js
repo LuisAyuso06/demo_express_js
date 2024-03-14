@@ -26,7 +26,7 @@ app.use(express.json());
 
 // Ruta para la página de inicio
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Página de Bienvenida' });
+    res.render('index', { title: '¡Bienvenido a nuestra página de eCommerce! ' });
 }); 
 
 // Ruta para el catálogo de productos
@@ -141,3 +141,5 @@ const port = 3000;
 app.listen(port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);
 });
+
+
